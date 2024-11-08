@@ -160,7 +160,7 @@ O diagrama de classes apresenta a estrutura principal do sistema, detalhando as 
 - Compra e Venda definem a forma de envio (Define).
 
   
- # Diagrama de sequencia 
+ # Diagrama de sequência 
 
 ### 1. Descrição Geral: Fornecer uma visão geral dos diagramas, explicando como eles representam as interações entre os componentes do sistema.
 - Atores e Objetos: Listar os principais atores (pessoas ou sistemas que interagem com o sistema) e objetos (entidades do sistema) envolvidos nos diagramas.
@@ -175,4 +175,7 @@ O diagrama de classes apresenta a estrutura principal do sistema, detalhando as 
 - Outras Funcionalidades: Listar outras funcionalidades importantes, como geração de relatórios, integrações com outros sistemas, etc.
 
 Os diagramas de sequência apresentados ilustram as interações entre os atores (cliente, gerente) e os objetos (produto, pedido) durante o processo de compra. Eles detalham o fluxo de uma venda, desde a escolha dos produtos até a finalização do pedido, incluindo o cálculo do frete e a atualização do estoque.
+
+
+# Diagrama de Atividade
 
