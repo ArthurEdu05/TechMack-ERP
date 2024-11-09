@@ -179,3 +179,76 @@ Os diagramas de sequência apresentados ilustram as interações entre os atores
 
 # Diagrama de Atividade
 
+### (Gerente)
+### 1. Diagrama de Cadastro e Gestão de Produtos:
+- Foco: Operações relacionadas ao cadastro, atualização e exclusão de produtos.
+- Funcionalidades: Permite ao usuário adicionar novos produtos, modificar informações existentes e remover produtos do sistema.
+- Fluxo: O diagrama detalha o processo de cadastro, incluindo a verificação da existência do produto e a exibição de mensagens de sucesso ou erro.
+
+### 2. Diagrama de Gestão de Clientes:
+- Foco: Operações relacionadas ao cadastro, atualização, exclusão e pesquisa de clientes.
+- Funcionalidades: Permite ao usuário adicionar novos clientes, modificar informações de clientes existentes, remover clientes do sistema e realizar buscas por clientes com base em critérios específicos.
+- Fluxo: O diagrama detalha o processo de cadastro de clientes, incluindo a verificação da existência do cliente e a exibição de mensagens de sucesso ou erro.
+
+### 3. Diagrama de Processo de Venda
+- Foco: Processo de realização de uma venda, desde a escolha dos produtos até a finalização da transação.
+- Funcionalidades: Permite ao usuário selecionar produtos, calcular o valor total da compra e finalizar a venda.
+- Fluxo: O diagrama detalha as etapas envolvidas em uma venda, como a adição de itens ao carrinho, o cálculo do valor total e a geração do pedido.
+
+### 4. Diagrama de Login 
+- Foco: Processo de autenticação dos usuários para acessar o sistema.
+- Funcionalidades: Permite aos usuários se autenticarem no sistema utilizando suas credenciais.
+- Fluxo: O diagrama detalha o processo de verificação das credenciais e a concessão ou negação do acesso ao sistema.
+
+
+## (Funcionário_Estoque)
+- Login: Verificação das credenciais do funcionário para acesso ao sistema.
+- Consulta de estoque: Pesquisa de produtos em estoque, verificação de quantidade e localização.
+- Realização de inventário: Contagem física dos produtos em estoque e atualização do sistema.
+- Registro de entrada de produtos: Cadastro de novos produtos no estoque, incluindo informações como quantidade, fornecedor e data de validade.
+- Registro de saída de produtos: Registro da saída de produtos do estoque, geralmente associada a pedidos de venda ou outros processos.
+- Geração de relatórios: Criação de relatórios sobre o estoque, como nível de estoque, produtos mais vendidos, etc.
+
+- Atendimento a pedidos: O funcionário recebe um pedido, verifica a disponibilidade dos produtos em estoque, separa os itens e registra a saída dos produtos.
+- Realização de inventário periódico: O funcionário realiza a contagem física dos produtos em estoque em intervalos regulares e compara os resultados com os dados do sistema.
+- Gerenciamento de produtos próximos ao vencimento: O sistema alerta o funcionário sobre produtos com data de validade próxima, permitindo que ele tome as devidas providências (ex: promoção, descarte).
+- Controle de qualidade: O funcionário pode realizar inspeções nos produtos recebidos ou armazenados para verificar a qualidade e identificar possíveis problemas.
+
+
+## (Funcionário)
+- Sistema de Gestão de Vendas: O funcionário pode ser um vendedor que consulta informações sobre produtos para atender a um cliente, e o cadastro de clientes é parte do processo de venda.
+- Sistema de Atendimento ao Cliente: O funcionário pode ser um atendente que consulta informações sobre produtos para responder a dúvidas de clientes e cadastra novos clientes.
+- Sistema de Gestão de Estoque: O funcionário pode ser um responsável por estoque que consulta a disponibilidade de produtos e cadastra novos itens.
+### Fluxo 
+### 1. Consulta de Produto:
+
+- O funcionário seleciona a opção de consultar um produto.
+- O sistema apresenta uma interface para o funcionário inserir os dados do produto (código, nome, etc.).
+- O sistema busca as informações do produto no banco de dados e as apresenta ao funcionário.
+
+### 2. Cadastro de Cliente:
+
+- O funcionário inicia o processo de cadastro.
+- O sistema apresenta um formulário para o funcionário preencher os dados do cliente (nome, endereço, contato, etc.).
+- O sistema verifica se já existe um cliente com os mesmos dados (por exemplo, CPF ou CNPJ).
+- Se o cliente já existir, o sistema pode apresentar uma mensagem de erro ou permitir que o funcionário atualize as informações.
+- Se o cliente não existir, o sistema salva as informações do novo cliente no banco de dados.
+
+## (Cliente)
+### 1. Tentativa de Login: O usuário inicia o processo tentando fazer login no sistema, inserindo suas credenciais (usuário e senha).
+
+### 2. Verificação de Credenciais: O sistema verifica se as credenciais fornecidas são válidas.
+
+### 3. Autenticação:
+ - Sucesso: Se as credenciais forem válidas, o usuário é autenticado e pode acessar as funcionalidades do sistema.
+- Falha: Se as credenciais forem inválidas, o usuário é direcionado para uma tela de opções.
+  
+### 4. Opções após Falha de Autenticação:
+- Tentar Novamente: O usuário pode tentar fazer login novamente, inserindo as credenciais corretas.
+- Criar Cadastro: Se o usuário ainda não possui uma conta, ele pode criar uma nova, fornecendo as informações solicitadas.
+  
+### 5. Cadastro: O usuário preenche um formulário com seus dados pessoais para criar uma nova conta.
+
+### 6. Verificação de Cadastro: O sistema verifica se o cadastro foi realizado com sucesso.
+
+### 7. Login Após Cadastro: Após o cadastro bem-sucedido, o usuário é direcionado para a tela de login para inserir suas novas credenciais.
