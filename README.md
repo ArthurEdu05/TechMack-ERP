@@ -252,3 +252,64 @@ Os diagramas de sequência apresentados ilustram as interações entre os atores
 ### 6. Verificação de Cadastro: O sistema verifica se o cadastro foi realizado com sucesso.
 
 ### 7. Login Após Cadastro: Após o cadastro bem-sucedido, o usuário é direcionado para a tela de login para inserir suas novas credenciais.
+
+
+# Diagrama de Estado
+## (Cliente)
+### 1. Início: O cliente inicia o processo com a ação criar_Cadastro.
+### 2. Aguardando Cadastro: Após criar o cadastro, o cliente aguarda nesta etapa.
+### 3. Fazendo Login: Depois de aguardar, o cliente pode fazer login (fazer_Login).
+### 4. Consultando Produto: Com o login feito, o cliente acessa a fase de consulta aos produtos (consultar_Produto).
+### 5. Selecionando Produto: Aqui, o cliente escolhe um produto específico (selecionar_Produto).
+### 6. Realizando Compra: Após selecionar, o cliente realiza a compra (realizar_Compra).
+### 7. Cancelando Compra: O cliente pode optar por cancelar a compra (cancelar_Compra).
+### 8. Retornando Dados: O cliente finaliza com a ação de retornar dados (retornar_Dados).
+### 9. Finalizar Sistema: A ação final do cliente é finalizar_Sistema.
+
+## (Funcionário_Estoque)
+### 1. Início: O funcionário inicia o processo com a ação fazer_Login.
+### 2. Aguardando Login: Após realizar o login, o funcionário entra no estado de aguardo para iniciar operações.
+### 3. Cadastrando Produto: O funcionário pode cadastrar um novo produto (cadastrar_Produto).
+### 4. Editando Produto: Após o cadastro, o funcionário pode editar informações do produto (editar_Produto).
+### 5. Excluindo Produto: O funcionário pode excluir um produto (excluir_Produto).
+### 6. Consultando Venda: Alternativamente, o funcionário pode consultar as vendas (consultar_Venda).
+### 7. Retornando Dados: Após realizar operações, o funcionário retorna os dados (retornar_Dados).
+### 8. Finalizar Sistema: A ação final é finalizar_Sistema.
+
+## (Funcinário)
+### 1. Início: O funcionário inicia o processo com a ação fazer_Login.
+### 2. Aguardando Login: Após o login, o funcionário aguarda para iniciar outras ações.
+### 3. Consultando Produto: O funcionário pode consultar produtos no sistema (consultar_Produto).
+### 4. Cadastrando Cliente: Ele pode cadastrar novos clientes (cadastrar_Cliente).
+### 5. Editando Cliente: Após cadastrar, o funcionário pode editar informações do cliente (editar_Cliente).
+### 6. Atualizando Quantidade de Estoque: O funcionário pode atualizar a quantidade de produtos no estoque (atualizarQtdEstoque).
+### 7. Calculando Preço: Ele pode calcular o preço dos produtos (calcular_Preco).
+### 8. Registrando Venda: O funcionário registra vendas no sistema (registrar_Venda).
+### 9. Consultando Venda: Alternativamente, ele pode consultar vendas anteriores (consultar_Venda).
+### 10. Cancelando Venda: O funcionário pode optar por cancelar uma venda (cancelar_Venda).
+### 11. Retornando Dados: Ao finalizar as operações, o funcionário retorna os dados (retornar_Dados).
+### 12. Finalizar Sistema: A última ação é finalizar_Sistema.
+
+## (Gerente)
+### 1. Início: O gerente inicia o processo com a ação fazer_Login.
+### 2. Aguardando Login: Após o login, o gerente aguarda para iniciar outras ações.
+### 3. Cadastrar Produto: O gerente pode cadastrar produtos no sistema (cadastrando_Produto).
+### 4. Editar Produto: O gerente pode renomear o produto ou algum dado dele (editando_Produto).
+### 5. Excluir Produto: O gerente pode deletar o produto (excluindo_Produto).
+### 6. Consultar Produto: O gerente pode verificar quais produtos estão cadastrados (consultando_Produto). 
+### 7. Cadastrando Cliente: Ele pode cadastrar novos clientes (cadastrar_Cliente).
+### 8. Editando Cliente: Após cadastrar, o gerente pode editar informações do cliente (editar_Cliente).
+### 9. Excluindo Cliente: Se necessário, o gerente pode excluir um cliente (excluindo_Cliente).
+### 10. Consultar Cliente: o gerente pode verificar os clientes (consultando_Cliente).
+### 11. Registrando Venda: O gerente registra vendas no sistema (registrar_Venda).
+### 12. Calculando Preço: Ele pode calcular o preço dos produtos (calcular_Preco).
+### 13. Atualizando Quantidade de Estoque: O gerente pode atualizar a quantidade de produtos no estoque (atualizarQtdEstoque).
+### 14. Selecionar Pagamento: Somente o gerente escolhe o metódo de pagamento (selecionando_Pagamento).
+### 15. Selecionar Envio: O gerente escolhe o metódo de entrega dos itens selecionados (selecionando_Envio).
+### 16. Calcular Frete: O sistema disponibiliza o calculo do frete de acordo com a distância do pedido (calcular_Frete).
+### 17. Enviar Status: Após isso o sistema envia um status relatando o que foi retirado do estoque (enviando_Status).
+### 18. Realizar Venda: O gerente pode confirmar a venda (realizar_Venda).
+### 19. Cancelando Venda: O gerente pode optar por cancelar uma venda (cancelar_Venda).
+### 20. Consultando Venda: Alternativamente, ele pode consultar vendas anteriores (consultar_Venda).
+### 21. Retornando Dados: Ao finalizar as operações, o gerente retorna os dados (retornar_Dados).
+### 22. Finalizar Sistema: A última ação é finalizar_Sistema.
